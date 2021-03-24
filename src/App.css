@@ -1,0 +1,51 @@
+:root {
+  --color-primary-main: #557a95;
+  --color-primary-dark: #274e67;
+  --color-primary-light: #84a9c6;
+
+  --color-secondary-main: #c44569;
+  --color-secondary-dark: #8f073f;
+  --color-secondary-light: #fa7697;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  background: var(--color-primary-light); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    var(--color-primary-light) #e4e5e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    var(--color-primary-light),
+    #e4e5e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+.MuiAvatar-colorDefault {
+  background-color: #c44569 !important;
+}
+.highlight {
+  background-color: rgb(164, 180, 148);
+  text-decoration-line: underline;
+}
